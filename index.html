@@ -32,7 +32,7 @@
                         <li class="header__navbar-item">
                             <span class="header__navbar-title--no-pointer">Kết nối</span>
                             <a class="header__navbar-icon-link" href="#">
-                                <i class=" header__navbar-icon fa-brands fa-facebook"></i>
+                               <i class="header__navbar-icon  fa-brands fa-facebook"></i>
                             </a>
                             <a class="header__navbar-icon-link" href="#">
                                 <i class=" header__navbar-icon fa-solid fa-envelope"></i>
@@ -43,7 +43,7 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="#" class="header__navbar-item-link">
-                                <i class=" header__navbar-icon fa-solid fa-bell"></i>
+                                <i class=" header__navbar-icon fa-regular fa-bell"></i>
                                 Thông báo
                             </a>
 
@@ -109,6 +109,8 @@
                         <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
 
                         <div class="header__search-select">
+
+                        <!--  nút trong shop hoặc ngoài shop                                                   
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-caret-down"></i>
 
@@ -122,6 +124,7 @@
                                     <i class="fa-solid fa-check"></i>
                                 </li>
                             </ul>
+                             -->
 
                         </div>
                         <button class="header___search-btn">
@@ -140,23 +143,410 @@
         </header>
 
         <div class="container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="fa-solid fa-list category__heading-icon"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Gà rán</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hamburger</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Mỳ spaghetti</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đồ uống</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn home-filter__btn">Phổ biến</button>
+                            <button class="btn home-filter__btn btn--primary">Mới nhất</button>
+                            <button class="btn home-filter__btn">Bán chạy</button>
 
+                            <div class="select-input">
+                                <span class="select-input__label ">Giá</span>
+                                <i class="fa-solid fa-caret-down select-input__icon"></i> 
+                                 <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: cao đến thấp</a>
+                                    </li>
+                                 </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class=" home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu2bhfu78pap12@resize_ss400x400!@crop_w400_h400_cTLogo-ShopeefoodVN.png);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt cay - size nhỏ</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">70.000đ</span>
+                                            <span class="home-product-item__price-current">63.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                140 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu2bhfu78pap12@resize_ss400x400!@crop_w400_h400_cTLogo-ShopeefoodVN.png);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt ngọt - size nhỏ</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">70.000đ</span>
+                                            <span class="home-product-item__price-current">63.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                59 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu20hr74jrq75f@resize_ss400x400!@crop_w400_h400_cT);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt phô mai - size nhỏ</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">70.000đ</span>
+                                            <span class="home-product-item__price-current">63.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                60 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu2bhfu78pap12@resize_ss400x400!@crop_w400_h400_cTLogo-ShopeefoodVN.png);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt cay - size lớn</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">108.000đ</span>
+                                            <span class="home-product-item__price-current">95.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                104 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">12%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu2bhfu78pap12@resize_ss400x400!@crop_w400_h400_cTLogo-ShopeefoodVN.png);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt ngọt - size lớn</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">108.000đ</span>
+                                            <span class="home-product-item__price-current">95.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                90 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">12%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image:url(https://mms.img.susercontent.com/vn-11134517-7r98o-lu20hr74jrq75f@resize_ss400x400!@crop_w400_h400_cT);">
+                                        </div>
+
+                                        <h4 class="home-product-item__name">Gà rán sốt phô mai - size lớn</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">110.000đ</span>
+                                            <span class="home-product-item__price-current">99.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+                                            <span class="home-product-item__sold">
+                                                240 đã bán
+                                            </span>
+
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div> 
+                                    </a>
+                                </div>
+
+                            
+                            </div>
+                        </div>
+                        
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon">1</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon">2</i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon">3</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon">...</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon">10</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <footer class="footer">
+
+        </footer>
     </div>
 
     <!-- modal layout -->
-     <div class="modal">
+     <!-- <div class="modal">
         <div class="modal__overlay">
 
         </div>
-        <div class="modal__body">
+        <div class="modal__body"> -->
             <!--register form-->
-            
-            
-            
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại password">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng kí, bạn đã chấp nhận
+                            <a href="#" class="auth-form-text-link">Điều khoản dịch vụ</a> &
+                            <a href="#" class="auth-form-text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div> -->
+
             <!--login form-->
-             <div class="auth-form">
+             <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng Nhập</h3>
@@ -195,7 +585,7 @@
                 </div>
             </div>
         </div> 
-     </div> 
+     </div>  -->
 
 </body>
 </html>
