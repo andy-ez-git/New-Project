@@ -85,6 +85,7 @@ html{
 
 /* Modal */
 .modal{
+    visibility: hidden;/*  hidden modal */
     position: fixed;
     top: 0;
     right: 0;
@@ -92,6 +93,7 @@ html{
     left: 0;
     display: flex;
     animation: fadein linear 0.2s;
+    z-index: 1000;
 }
 
 .modal__overlay{
@@ -99,6 +101,12 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0 , 0 , 0 , 0.4);
+    
+}
+
+.modal.active{
+    visibility: visible;
+    opacity: 1;
 }
 
 .modal__body{
@@ -239,8 +247,4 @@ html{
     text-align: center;
     line-height: var(--height);
     border-radius: 2px;
-}
-
-.pagination-item__icon{
-    
 }

@@ -233,10 +233,13 @@
     background-color: var(--white-color);
     overflow: hidden;
     border-radius: 5px;
+    display: none;
 }
+
 
 .auth-form__container{
     padding: 0 32px;
+    
 }
 
 .auth-form__header{
@@ -275,6 +278,7 @@
 }
 .auth-form__input:focus{
     border-color: #888;
+    
 }
 .auth-form__aside{
     margin-top: 18px;
@@ -821,6 +825,3 @@ i.home-product-item__like-icon-fill{
 
 /* Footer */
 
-.footer{
-
-}
