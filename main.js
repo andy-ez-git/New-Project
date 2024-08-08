@@ -1,5 +1,4 @@
 // Register and login switch
-
 document.addEventListener('DOMContentLoaded', function () {
     // Get elements
     const modal = document.querySelector('.modal');
@@ -73,4 +72,37 @@ document.addEventListener('DOMContentLoaded', function () {
             showLoginForm();
         });
     }
+});
+
+//Lọc sản phẩm
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryItems = document.querySelectorAll('.category-item');
+    const products = document.querySelectorAll('.home-product .grid__column-2-4');
+
+    categoryItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Xóa lớp active khỏi tất cả các mục danh mục
+            categoryItems.forEach(i => i.classList.remove('category-item--active'));
+            // Thêm lớp active vào mục danh mục được nhấp vào
+            this.classList.add('category-item--active');
+
+            const category = this.textContent.trim().toLowerCase();
+
+            if (category === 'tất cả') {
+                // Hiển thị tất cả các sản phẩm
+                products.forEach(product => product.classList.remove('hidden'));
+            } else {
+                // Lọc theo danh mục được chọn
+                products.forEach(product => {
+                    if (product.getAttribute('data-category') === category) {
+                        product.classList.remove('hidden');
+                    } else {
+                        product.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    });
 });
