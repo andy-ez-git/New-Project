@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gà rán sốt cay - size nhỏ</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="file-css/base.css">
+    <link rel="stylesheet" href="file-css/main.css">
+    <link rel="stylesheet" href="file-css/detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--QR header__navbar-item--separate">
+                            <i class="fa-brands fa-shopify header__navbar-icon"></i>
+                            Vào cửa hàng Shopeefood
+                            <!--Header QR code-->
+                            <div class="header__QR">
+                                <img src="image/QR-code.png" alt="QR code" class="header__QR-img">
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a class="header__navbar-icon-link" href="#">
+                               <i class="header__navbar-icon  fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="header__navbar-icon-link" href="#">
+                                <i class=" header__navbar-icon fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class=" header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+
+                            <!--Header Notification-->
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                    <a class="header__notify-link" href="">
+                                            <img src="image/combo-couple.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">COMBO COUPLE (tặng nước ngọt)</span>
+                                                <span class="header__notify-description">1 phần gà rán size lớn sốt tự chọn, 1 phần mỳ ý bò bằm và tặng kèm 1 chai coca</span>
+                                            </div>
+                                            </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a class="header__notify-link" href="">
+                                            <img src="image/combo-ga.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">COMBO Gà thả ga (tặng nước ngọt)</span>
+                                                <span class="header__notify-description">3 gà rán mini với 3 loại sốt ngọt, cay, phô mai, 1 phần khoai tây và được tặng kèm 1 chai coca</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a class="header__notify-link" href="">
+                                            <img src="image/Ga-ran-sot-han-quoc.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">COMBO SOLO (tặng nước ngọt)</span>
+                                                <span class="header__notify-description">Gà rán mini sốt tùy chọn, 1 phần khoai tây và nước ngọt miễn phí</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class=" header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate open-register" >Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong open-login">Đăng nhập</li>
+                    </ul>
+                </nav>
+
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="image/logo.jpg" alt="Logo Gà Rán" class="header__logo-img"></a>
+                    </div>
+
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                        <div class="header__search-select">
+
+                         <!-- nút trong shop hoặc ngoài shop
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fa-solid fa-caret-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul> -->
+
+                        </div>
+                        <button class="header___search-btn">
+                            <i class="header___search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header__cart">
+                        <i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        
+        <div class="container">
+            <div class="grid">
+                <div class="product-detail">
+            <!-- Product Image Section -->
+            <div class="product-detail__left">
+                <div class="product-detail__image">
+                    <img src="image/Ga-ran-sot-han-quoc.jpg" alt="Product Image">
+                </div>
+            </div>
+        
+            <!-- Product Info Section -->
+            <div class="product-detail__right">
+                <h1 class="product-detail__name">Gà rán sốt cay - size nhỏ</h1>
+                <div class="product-detail__price">
+                    <span class="product-detail__price-current">63.000đ</span>
+                    <span class="product-detail__price-old">70.000đ</span>
+                </div>
+                <div class="product-detail__rating">
+                    <span class="product-detail__star--gold"><i class="fa fa-star"></i></span>
+                    <span class="product-detail__star--gold"><i class="fa fa-star"></i></span>
+                    <span class="product-detail__star--gold"><i class="fa fa-star"></i></span>
+                    <span class="product-detail__star--gold"><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span class="product-detail__sold">140 đã bán</span>
+                </div>
+        
+                <!-- Buy Section -->
+                <div class="product-detail__buy">
+                    <label for="quantity">Số lượng:</label>
+                    <input id="quantity" type="number" value="1" min="1" max="10">
+                    <button class="btn btn-add-cart">Thêm vào giỏ hàng</button>
+                    <button class="btn btn-buy">Mua ngay</button>
+                </div>
+            </div>
+                </div>
+        
+        <!-- Product Description -->
+                <div class="product-description">
+                    <h2>Chi tiết sản phẩm</h2>
+                    <p> Nguyên liệu: Thịt gà tươi được chọn lọc kỹ càng, ướp cùng nước sốt cay đặc biệt.</br>
+                        Hương vị: Lớp vỏ giòn tan kết hợp với nước sốt cay đậm đà, kích thích vị giác. Gà vẫn giữ được độ mềm mọng, thơm ngon, với hương vị cay nồng vừa phải, phù hợp với những ai yêu thích đồ ăn cay nhưng không quá gắt.</br>
+                        Kích thước: Size nhỏ, đủ dùng cho một người hoặc như món ăn kèm trong bữa chính.</br>
+                        Sốt cay: Làm từ ớt tươi và các loại gia vị cay nồng, cân bằng giữa vị ngọt và cay, mang lại trải nghiệm ẩm thực đầy hấp dẫn.</br>
+                    </br>
+                        Hướng dẫn sử dụng:</br>
+                        
+                        -Ăn kèm với cơm hoặc bánh mì.</br>
+                        -Có thể dùng kèm với nước ngọt hoặc đồ uống lạnh để giảm độ cay và tăng sự ngon miệng.</br>
+                        -Thời gian bảo quản: Nên dùng ngay sau khi chế biến để giữ độ giòn và thơm ngon, bảo quản trong ngăn mát tối đa 1 ngày nếu cần.</br>
+                    </br>
+                        Thích hợp cho:</br>
+                        -Những người thích hương vị cay, đặc biệt là các món ăn nhanh gọn nhẹ.</br>
+                        -Thực khách muốn có một món gà rán đậm đà để nhâm nhi vào bữa xế hoặc bữa nhẹ.</br>
+                    </br>
+                        Đặc điểm nổi bật:</br>
+                        
+                        -Sốt cay đặc trưng.</br>
+                        -Độ giòn lý tưởng ngay cả khi sốt cay đã thấm vào lớp vỏ.</br>
+                        -Giá ưu đãi so với kích cỡ và chất lượng.</br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- modal layout -->
+        <div class="modal">
+            <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            <!--register form-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading" >Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại password">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng kí, bạn đã chấp nhận
+                            <a href="#" class="auth-form-text-link">Điều khoản dịch vụ</a> &
+                            <a href="#" class="auth-form-text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--login form-->
+             <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading" >Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                        
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div> 
+     </div> 
+
+    </div>
+</body>
+</html>
